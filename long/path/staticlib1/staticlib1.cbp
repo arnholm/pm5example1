@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="staticlib1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="GCC_Debug">
+				<Option output=".cmp/gcc/staticlib1d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output=".cmp/gcc/obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-g" />
+					<Add option="-std=c++11" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DNOPCH" />
+					<Add option="-D_DEBUG" />
+					<Add directory="./" />
+				</Compiler>
+			</Target>
+			<Target title="GCC_Release">
+				<Option output=".cmp/gcc/staticlib1" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output=".cmp/gcc/obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-fPIC" />
+					<Add option="-std=c++11" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DNOPCH" />
+					<Add directory="./" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-DSTATICLIB1_IMPLEMENTATION" />
+		</Compiler>
+		<Unit filename="staticlib1_class.cpp" />
+		<Unit filename="staticlib1_class.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="pm5example1">
+		<Project filename="testconsole/testconsole.cbp">
+			<Depends filename="long/path/staticlib1/staticlib1.cbp" />
+			<Depends filename="dynlib1/dynlib1.cbp" />
+		</Project>
+		<Project filename="long/path/staticlib1/staticlib1.cbp" />
+		<Project filename="dynlib1/dynlib1.cbp">
+			<Depends filename="long/path/staticlib1/staticlib1.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

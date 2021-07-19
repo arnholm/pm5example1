@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="testconsole" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="GCC_Debug">
+				<Option output=".cmp/gcc/bin/Debug/testconsoled" prefix_auto="0" extension_auto="1" />
+				<Option object_output=".cmp/gcc/obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-g" />
+					<Add option="-std=c++11" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DNOPCH" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add library="staticlib1d" />
+					<Add library="dynlib1d" />
+					<Add directory="../dynlib1/.cmp/gcc/bin/Debug" />
+				</Linker>
+			</Target>
+			<Target title="GCC_Release">
+				<Option output=".cmp/gcc/bin/Release/testconsole" prefix_auto="0" extension_auto="1" />
+				<Option object_output=".cmp/gcc/obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-fPIC" />
+					<Add option="-std=c++11" />
+					<Add option="-W" />
+					<Add option="-fexceptions" />
+					<Add option="-DNOPCH" />
+				</Compiler>
+				<Linker>
+					<Add library="staticlib1" />
+					<Add library="dynlib1" />
+					<Add directory="../dynlib1/.cmp/gcc/bin/Release/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="../long/path" />
+			<Add directory=".." />
+		</Compiler>
+		<Linker>
+			<Add directory="../long/path/staticlib1/.cmp/gcc" />
+			<Add directory="../dynlib1/.cmp/gcc" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
