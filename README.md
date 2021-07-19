@@ -7,7 +7,7 @@ The plugin is found at [https://github.com/arnholm/premake5cb](https://github.co
 
 ```
 
-##A) Building and running the example workspace from within Code::Blocks##
+## A) Building and running the example workspace from within Code::Blocks 
 
 ![testconsole_cb](images/testconsole_cb.png)
 
@@ -16,7 +16,7 @@ The plugin is found at [https://github.com/arnholm/premake5cb](https://github.co
 ```
 
 
-##B) Building and running the example workspace using Premake5##
+## B) Building and running the example workspace using Premake5 
 
 The Premake5 exporter plugin created the file **pm5example1_premake5.lua**. It has not been manually edited.
 
